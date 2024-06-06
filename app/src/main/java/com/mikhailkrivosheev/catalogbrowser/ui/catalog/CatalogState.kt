@@ -5,7 +5,7 @@ import com.mikhailkrivosheev.catalogbrowser.domain.CatalogItem
 data class CatalogState(
     val items: List<CatalogItem> = emptyList(),
     val errorMessage: String? = null,
-    val isLoading: Boolean = false,
+    val isLoading: Boolean = true,
     val isLoadingMore: Boolean = false,
     val endReached: Boolean = false,
     val clickedItemMessage: String? = null,

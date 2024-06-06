@@ -36,10 +36,6 @@ class CatalogViewModel @Inject constructor(
         onReset = { mutableStateFlow.update { it.copy(items = emptyList()) } }
     )
 
-    init {
-        loadNextItems()
-    }
-
     fun loadNextItems() {
         viewModelScope.launch {
             paginator.loadNextItems()
