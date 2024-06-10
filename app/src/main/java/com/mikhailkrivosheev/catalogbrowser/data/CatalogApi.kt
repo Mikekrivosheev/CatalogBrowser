@@ -7,6 +7,6 @@ import retrofit2.http.Query
 interface CatalogApi {
 
     @GET("/e/mock/v1/items")
-    suspend fun getItems(@Query("max_id") sinceId: String? = null): List<CatalogItemResponse>
+    suspend fun getItems(@Query("max_id") maxId: String? = null): List<CatalogItemResponse>
 
 }
